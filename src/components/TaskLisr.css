@@ -1,0 +1,115 @@
+/* src/components/TaskList.css */
+
+/* Center the Task List */
+.task-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  /* Style the heading */
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Style the task list */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px; /* Limit the width of the list */
+  }
+  
+  li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover effect for task item */
+  li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* Style the buttons */
+  button,
+  .link-button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button {
+    background-color: #e74c3c;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    background-color: #c0392b;
+  }
+  
+  .link-button {
+    background-color: #3498db;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .link-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .link-button:focus,
+  button:focus {
+    outline: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Make the entire container responsive */
+  @media (max-width: 600px) {
+    .task-list-container {
+      padding: 10px;
+    }
+  
+    ul {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  

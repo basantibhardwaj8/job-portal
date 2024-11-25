@@ -1,0 +1,94 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and overall background */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main login container */
+  .login-container {
+    width: 100%;
+    max-width: 420px; /* Maximum width of the login form */
+    background-color: #fff; /* White background */
+    padding: 30px 40px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+  }
+  
+  /* Heading style */
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields styling */
+  input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #4d90fe; /* Blue border when focused */
+  }
+  
+  /* Submit button styling */
+  button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4d90fe;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 480px) {
+    .login-container {
+      width: 90%;
+      padding: 25px 20px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    input, button {
+      font-size: 14px;
+    }
+  }
+  
